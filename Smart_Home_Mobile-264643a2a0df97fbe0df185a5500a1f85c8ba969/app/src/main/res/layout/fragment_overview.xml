@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".room.overviewFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/empty_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_room" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignLeft="@+id/empty_room"
+            android:layout_alignTop="@+id/empty_room"
+            android:background="@drawable/icon_empty_room" />
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_empty_room"
+            android:text="7"
+            android:textColor="#666666"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignTop="@+id/empty_room"
+            android:layout_alignRight="@+id/empty_room"/>
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/empty_room"
+            android:layout_alignBottom="@+id/empty_room"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="số phòng đang trống"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/active_room"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/bg_room"
+            android:layout_toRightOf="@+id/empty_room"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignLeft="@+id/active_room"
+            android:layout_alignTop="@+id/active_room"
+            android:background="@drawable/icon_active_room" />
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_active_room"
+            android:text="10"
+            android:textColor="#666666"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignTop="@+id/active_room"
+            android:layout_alignRight="@+id/active_room"/>
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/active_room"
+            android:layout_alignBottom="@+id/active_room"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="số phòng đang thuê"
+            android:textColor="#666666"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</FrameLayout>
