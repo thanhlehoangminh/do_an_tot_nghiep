@@ -6,10 +6,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.example.afinal.fragment_home.fragmentHome;
-import com.example.afinal.fragment_home.fragmentSensor;
-import com.example.afinal.fragment_home.fragmentSetting;
-
 public class ViewPagerMainAdapter extends FragmentStatePagerAdapter {
     public ViewPagerMainAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
@@ -19,8 +15,6 @@ public class ViewPagerMainAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0:
-                return new fragmentHome();
             case 1:
                 return new fragmentSensor();
             case 2:

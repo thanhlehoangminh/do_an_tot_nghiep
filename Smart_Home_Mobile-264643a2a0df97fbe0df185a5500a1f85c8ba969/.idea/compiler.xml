@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="11">
+      <module name="Smart_Home_Mobile-264643a2a0df97fbe0df185a5500a1f85c8ba969.FInal.app" target="17" />
       <module name="Smart_Home_Mobile.FInal.app" target="17" />
     </bytecodeTargetLevel>
   </component>

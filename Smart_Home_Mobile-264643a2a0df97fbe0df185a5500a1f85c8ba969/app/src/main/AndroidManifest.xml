@@ -30,9 +30,6 @@
         </activity>
         <activity android:parentActivityName=".login.SignInActivity" android:name=".MainActivity"/>
 
-        <activity android:parentActivityName=".MainActivity" android:name=".DeviceLivingRoomActivity"/>
-        <activity android:parentActivityName=".MainActivity" android:name=".DeviceBathRoomActivity"/>
-        <activity android:parentActivityName=".MainActivity" android:name=".DeviceBedRoomActivity"/>
         <activity android:parentActivityName=".login.SignInActivity" android:name=".login.forgotPassWord" />
         <activity android:parentActivityName=".login.SignInActivity" android:name=".login.SignUp1Activity" />
         <activity android:parentActivityName=".login.SignInActivity"  android:name=".login.SignUp2Activity" />

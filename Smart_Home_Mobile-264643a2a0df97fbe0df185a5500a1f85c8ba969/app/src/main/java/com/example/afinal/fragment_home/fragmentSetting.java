@@ -1,7 +1,6 @@
 package com.example.afinal.fragment_home;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -21,10 +20,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.afinal.MainActivity;
@@ -37,8 +34,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.function.BinaryOperator;
 
 public class fragmentSetting extends Fragment {
     //    DatabaseReference mHome;

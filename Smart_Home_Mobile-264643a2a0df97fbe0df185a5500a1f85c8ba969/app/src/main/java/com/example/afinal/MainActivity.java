@@ -5,18 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 
 import com.example.afinal.custom_textView.RobotoBoldTextView;
 import com.example.afinal.fragment_home.ViewPagerMainAdapter;
-import com.example.afinal.fragment_home.fragmentHome;
-import com.example.afinal.fragment_home.fragmentSensor;
 import com.example.afinal.fragment_home.fragmentSetting;
+import com.example.afinal.fragment_home.fragmentSensor;
 import com.example.afinal.widget.CustomViewPager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DatabaseReference;
@@ -47,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setPagingEnable(false);
         fragmentSetting settingFragment = new fragmentSetting();
         fragmentSensor sensorFragment = new fragmentSensor();
-        fragmentHome homeFragment = new fragmentHome();
+        fragmentSetting homeFragment = new fragmentSetting();
 
         _userID = getIntent().getStringExtra("KEY_ID");
 
