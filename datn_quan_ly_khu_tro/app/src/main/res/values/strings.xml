@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Home</string>
+    <string name="app_name">Khu trọ của tôi</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="living_room_fragment">Living Room fragment</string>
     <string name="bed_room_fragment">BedRoom fragment</string>

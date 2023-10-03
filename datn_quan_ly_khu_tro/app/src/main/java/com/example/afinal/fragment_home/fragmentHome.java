@@ -1,13 +1,23 @@
 package com.example.afinal.fragment_home;
 
+import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -29,11 +39,13 @@ public class fragmentHome extends Fragment {
     private TextView user_name, date;
     private String get_phone, user_id, current_date;
     private ListView lv;
+    private Button btn_add;
     private final String ten_khu_tro[] = {"Khu trọ 1", "Khu trọ 2", "Khu trọ 3", "Khu trọ 4", "Khu trọ 5", "Khu trọ 6"};
     private final String ten_thiet_bi[] = {"DV01", "DV02", "DV02", "DV03", "DV04", "DV05", "DV06"};
     private final String dia_chi[] = {"1, Võ Văn Ngân", "2, Võ Văn Ngân", "3, Võ Văn Ngân", "4, Võ Văn Ngân", "5, Võ Văn Ngân", "6, Võ Văn Ngân"};
     public int i = 0;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -46,15 +58,23 @@ public class fragmentHome extends Fragment {
         firebase_home = FirebaseDatabase.getInstance().getReference();
         current_date = DateFormat.getDateInstance().format(Calendar.getInstance().getTime());
         date.setText(current_date);
+        btn_add = home_view.findViewById(R.id.btn_add_khu_tro);
         lv = home_view.findViewById(R.id.lv_khu_tro);
-        ArrayList<khu_tro> khu_tro_list = new ArrayList<>();
-        Khu_tro_arr_adapter khu_tro_arr_adapter = new Khu_tro_arr_adapter(fragmentHome.this, R.layout.layout_khu_tro, khu_tro_list);
-        lv.setAdapter(khu_tro_arr_adapter);
-        for (i = 0; i < ten_khu_tro.length; i++)
-        {
-            khu_tro_list.add(new khu_tro(R.drawable.background_home_1, R.drawable.icon_home_map, R.drawable.icon_smart_lock, R.drawable.icon_connected, ten_khu_tro[i], dia_chi[i], "Connected", ten_thiet_bi[i]));
-        }
+//        ArrayList<khu_tro> khu_tro_list = new ArrayList<>();
+//        Khu_tro_arr_adapter khu_tro_arr_adapter = new Khu_tro_arr_adapter(fragmentHome.this, R.layout.layout_khu_tro, khu_tro_list);
+//        lv.setAdapter(khu_tro_arr_adapter);
+//        for (i = 0; i < ten_khu_tro.length; i++)
+//        {
+//            khu_tro_list.add(new khu_tro(R.drawable.background_home_1, R.drawable.icon_home_map, R.drawable.icon_smart_lock, R.drawable.icon_connected, ten_khu_tro[i], dia_chi[i], "Đã kết nối", ten_thiet_bi[i]));
+//        }
         getUserDataByPath(user_id);
+
+        btn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAddKhuTroDialog(Gravity.CENTER);
+            }
+        });
 
         return home_view;
     }
@@ -81,5 +101,56 @@ public class fragmentHome extends Fragment {
         });
     }
 
+    private void openAddKhuTroDialog(int gravity)
+    {
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_add_khu_tro_layout);
 
+        Window window = dialog.getWindow();
+        if (window == null)
+        {
+            return;
+        }
+
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        WindowManager.LayoutParams windowAttributes = window.getAttributes();
+        windowAttributes.gravity = gravity;
+        window.setAttributes(windowAttributes);
+
+        if (Gravity.CENTER == gravity)
+        {
+            dialog.setCancelable(true);
+        }
+        else
+        {
+            dialog.setCancelable(false);
+        }
+
+        EditText edtMaThietBi = dialog.findViewById(R.id.edit_text_ma_thiet_bi);
+        EditText edtTenKhuTro = dialog.findViewById(R.id.edit_text_ten_khu_tro);
+        EditText edtDiaChi = dialog.findViewById(R.id.edit_text_dia_chi);
+        ImageButton imgBtnXacNhan = dialog.findViewById(R.id.img_btn_xac_nhan_tt);
+
+        imgBtnXacNhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String ma_thiet_bi, ten_khu_tro, dia_chi;
+
+                ma_thiet_bi = edtMaThietBi.getText().toString();
+                ten_khu_tro = edtTenKhuTro.getText().toString();
+                dia_chi = edtDiaChi.getText().toString();
+
+                ArrayList<khu_tro> khu_tro_list = new ArrayList<>();
+                Khu_tro_arr_adapter khu_tro_arr_adapter = new Khu_tro_arr_adapter(fragmentHome.this, R.layout.layout_khu_tro, khu_tro_list);
+                lv.setAdapter(khu_tro_arr_adapter);
+                khu_tro_list.add(new khu_tro(R.drawable.background_home_1, R.drawable.icon_home_map, R.drawable.icon_smart_lock, R.drawable.icon_connected, ten_khu_tro, dia_chi, "Đã kết nối", ma_thiet_bi));
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
 }

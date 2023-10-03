@@ -58,7 +58,7 @@ public class fragmentSetting extends Fragment {
         mData = FirebaseDatabase.getInstance().getReference();
         notiSw = mview.findViewById(R.id.notiSwitch);
         mHome = FirebaseDatabase.getInstance().getReference();
-        btnEditProfile = mview.findViewById(R.id.btnEditProfile);
+        btnEditProfile = mview.findViewById(R.id.btn_edit_profile);
         btnLogout = mview.findViewById(R.id.btnLogout);
         mMainActivity = (MainActivity) getActivity();
 

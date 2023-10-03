@@ -8,8 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bgColor">#EEE8E8</color>
-    <color name="tvoff">#666666</color>
-    <color name="tvnameon">#FFFFFF</color>
+    <color name="checkbox">#666666</color>
+    <color name="textname">#FFFFFF</color>
     <color name="tabactive">#7D19A1</color>
     <color name="tabbackground">#EEE8E8</color>
     <color name="tvdeviceon">#7D19A1</color>

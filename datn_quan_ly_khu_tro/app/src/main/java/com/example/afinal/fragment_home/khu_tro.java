@@ -53,11 +53,11 @@ public class khu_tro {
     }
 
     public String getTv_connected() {
-        return tv_device;
+        return tv_connected;
     }
 
     public void setTv_connected(String tv_connected) {
-        this.tv_device = tv_device;
+        this.tv_connected = tv_connected;
     }
 
     public String getTv_device() {

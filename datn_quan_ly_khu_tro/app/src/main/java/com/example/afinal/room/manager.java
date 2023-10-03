@@ -20,8 +20,8 @@ public class manager extends AppCompatActivity {
 
         mTableLayout = findViewById(R.id.tab_layout_manager_room);
         mViewPager = findViewById(R.id.room_viewpager);
-//
-//        ViewPagerHomeAdapter adapter = new ViewPagerHomeAdapter(getChildFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+
+//        ViewPagerManagerAdapter adapter = new ViewPagerManagerAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
 //        mViewPager.setAdapter(adapter);
 //        mTableLayout.setupWithViewPager(mViewPager);
     }

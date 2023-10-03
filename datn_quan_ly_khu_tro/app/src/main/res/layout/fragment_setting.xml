@@ -57,17 +57,17 @@
                 android:textSize="15sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_edit_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:id="@+id/btnEditProfile"
-                android:layout_marginTop="20dp"
-                android:paddingStart="30dp"
                 android:layout_gravity="center"
-                android:paddingEnd="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/custom_button_edit_profile"
-                android:text="Edit Profile"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="Tùy chỉnh hồ sơ"
                 android:textAllCaps="false"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -102,7 +102,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/notiIcon"
-                        android:text="Notification"
+                        android:text="Thông báo "
                         android:textColor="@color/white"
                         android:textSize="20sp" />
 
@@ -139,7 +139,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/pAccountIcon"
-                        android:text="Priavte Account"
+                        android:text="Tài khoản cá nhân"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
 
@@ -158,116 +158,7 @@
 
             </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            android:padding="15dp"
-            android:background="@drawable/round_back_white">
-
-            <RelativeLayout
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/securityIcon"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/round_back_security"
-                    android:padding="10dp"
-                    android:src="@drawable/icon_security" />
-
-                <com.example.afinal.custom_textView.RobotoMediumTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_toEndOf="@id/securityIcon"
-                    android:text="Security and Privacy"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/icon_right_arrow"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/textsizeIcon"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/round_back_textsize"
-                    android:padding="10dp"
-                    android:src="@drawable/icon_textsize" />
-
-                <com.example.afinal.custom_textView.RobotoMediumTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_toEndOf="@id/textsizeIcon"
-                    android:text="Text Size"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/icon_right_arrow"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/languageIcon"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/round_back_language"
-                    android:padding="10dp"
-                    android:src="@drawable/icon_language" />
-
-                <com.example.afinal.custom_textView.RobotoMediumTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_toEndOf="@id/languageIcon"
-                    android:text="Language"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/icon_right_arrow"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
-
-            </RelativeLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
+            <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -297,7 +188,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginStart="20dp"
                     android:layout_toEndOf="@id/logoutIcon"
-                    android:text="Log out"
+                    android:text="Đăng xuất "
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
