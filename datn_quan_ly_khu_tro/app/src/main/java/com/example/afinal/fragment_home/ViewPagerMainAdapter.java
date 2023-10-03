@@ -16,7 +16,7 @@ public class ViewPagerMainAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 1:
-                return new fragmentSensor();
+                return new fragmentHistory();
             case 2:
                 return new fragmentSetting();
             default:

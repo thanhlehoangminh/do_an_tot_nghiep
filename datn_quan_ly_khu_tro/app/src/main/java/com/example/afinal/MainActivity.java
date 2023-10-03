@@ -13,7 +13,7 @@ import android.view.WindowManager;
 import com.example.afinal.custom_textView.RobotoBoldTextView;
 import com.example.afinal.fragment_home.ViewPagerMainAdapter;
 import com.example.afinal.fragment_home.fragmentSetting;
-import com.example.afinal.fragment_home.fragmentSensor;
+import com.example.afinal.fragment_home.fragmentHistory;
 import com.example.afinal.widget.CustomViewPager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DatabaseReference;
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
         viewPager.setPagingEnable(false);
         fragmentSetting settingFragment = new fragmentSetting();
-        fragmentSensor sensorFragment = new fragmentSensor();
+        fragmentHistory sensorFragment = new fragmentHistory();
         fragmentSetting homeFragment = new fragmentSetting();
 
         _userID = getIntent().getStringExtra("KEY_ID");
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                         bottomNavigationView.getMenu().findItem(R.id.menu_home).setChecked(true);
                         break;
                     case 1:
-                        bottomNavigationView.getMenu().findItem(R.id.menu_sensor).setChecked(true);
+                        bottomNavigationView.getMenu().findItem(R.id.menu_history).setChecked(true);
                         break;
                     case 2:
                         bottomNavigationView.getMenu().findItem(R.id.menu_setting).setChecked(true);
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         ;
                         viewPager.setCurrentItem(0);
                         break;
-                    case R.id.menu_sensor:
+                    case R.id.menu_history:
                         ;
                         viewPager.setCurrentItem(1);
                         break;

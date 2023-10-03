@@ -17,11 +17,11 @@ public class ViewPagerManagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new manager_roomFragment();
+                return new memberFragment();
             case 1:
                 return new overviewFragment();
             default:
-                return new manager_roomFragment();
+                return new memberFragment();
         }
     }
 
