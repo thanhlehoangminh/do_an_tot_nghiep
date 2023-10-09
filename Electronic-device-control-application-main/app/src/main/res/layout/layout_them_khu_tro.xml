@@ -46,10 +46,10 @@
         android:id="@+id/imgView_icon_smart_lock"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="95dp"
         android:layout_marginBottom="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/imgView_background"
-        app:layout_constraintEnd_toStartOf="@+id/tv_device"
+        app:layout_constraintEnd_toEndOf="@+id/imgView_background"
         app:srcCompat="@drawable/icon_smart_lock" />
 
     <TextView
@@ -86,14 +86,14 @@
         app:layout_constraintEnd_toEndOf="@+id/imgView_background"
         app:layout_constraintTop_toTopOf="@+id/imgView_background" />
 
-        <ImageView
-            android:id="@+id/imgView_icon_connected"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="5dp"
-            app:layout_constraintEnd_toStartOf="@+id/tv_connected"
-            app:layout_constraintTop_toTopOf="@+id/imgView_background"
-            app:srcCompat="@drawable/icon_connected" />
+    <ImageView
+        android:id="@+id/imgView_icon_connected"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="95dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgView_background"
+        app:layout_constraintTop_toTopOf="@+id/imgView_background"
+        app:srcCompat="@drawable/icon_connected" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

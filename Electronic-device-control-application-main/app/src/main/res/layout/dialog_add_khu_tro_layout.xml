@@ -129,13 +129,14 @@
 
     <ImageButton
         android:id="@+id/img_btn_xac_nhan_tt"
-        android:layout_width="250dp"
+        android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_text_dia_chi"
-        app:srcCompat="@drawable/btn_xac_nhan_va_tiep_tuc" />
+        app:srcCompat="@drawable/btn_xac_nhan_add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Electronic-device-control-application-main.FInal.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Electronic-device-control-application-main.FInal.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Electronic-device-control-application-main.FInal.app.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Electronic-device-control-application-main.FInal.app.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Electronic-device-control-application-main.FInal.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Electronic-device-control-application-main.FInal.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FInal.iml" filepath="$PROJECT_DIR$/.idea/modules/FInal.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FInal.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FInal.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FInal.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FInal.app.androidTest.iml" />

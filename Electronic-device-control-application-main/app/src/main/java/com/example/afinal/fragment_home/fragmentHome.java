@@ -16,12 +16,14 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.afinal.MainActivity;
 import com.example.afinal.R;
+import com.example.afinal.login.SignInActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -104,13 +106,28 @@ public class fragmentHome extends Fragment {
                     public void onClick(View v) {
                         String ma_thiet_bi, ten_khu_tro, dia_chi;
 
-                        ma_thiet_bi = edtMaThietBi.getText().toString();
-                        ten_khu_tro = edtTenKhuTro.getText().toString();
-                        dia_chi = edtDiaChi.getText().toString();
+                        if (edtMaThietBi.length() == 0)
+                        {
+                            edtMaThietBi.setError("Nhập mã thiết bị");
+                        }
+                        else if (edtTenKhuTro.length() == 0)
+                        {
+                            edtTenKhuTro.setError("Nhập tên khu trọ");
+                        }
+                        else if (edtDiaChi.length() == 0)
+                        {
+                            edtDiaChi.setError("Nhập địa chỉ");
+                        }
+                        else
+                        {
+                            ma_thiet_bi = edtMaThietBi.getText().toString().trim();
+                            ten_khu_tro = edtTenKhuTro.getText().toString().trim();
+                            dia_chi = edtDiaChi.getText().toString().trim();
 
-                        lv.setAdapter(khu_tro_arr_adapter);
-                        khu_tro_list.add(new them_khu_tro(R.drawable.background_home_1, R.drawable.icon_home_map, R.drawable.icon_smart_lock, R.drawable.icon_connected, ten_khu_tro, dia_chi, "Đã kết nối", ma_thiet_bi));
-                        dialog.dismiss();
+                            lv.setAdapter(khu_tro_arr_adapter);
+                            khu_tro_list.add(new them_khu_tro(R.drawable.background_home_1, R.drawable.icon_home_map, R.drawable.icon_smart_lock, R.drawable.icon_connected, ten_khu_tro, dia_chi, "Đã kết nối", ma_thiet_bi));
+                            dialog.dismiss();
+                        }
                     }
                 });
 
