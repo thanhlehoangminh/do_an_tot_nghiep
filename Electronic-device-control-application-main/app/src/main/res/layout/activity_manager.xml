@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".room.Manager">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_room"
+            android:background="@drawable/bg_header">
+
+            <ImageButton
+                android:id="@+id/btnBack_room"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khu trọ 1"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/btnBack_room"/>
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_manager_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_room"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/tab_rect"
+            android:elevation="3dp"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/tablayout"
+            app:tabTextColor="@color/black" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/room_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tab_layout_manager_room" />
+    </RelativeLayout>
+
+
+</FrameLayout>

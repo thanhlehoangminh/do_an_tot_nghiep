@@ -9,7 +9,104 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9bbe8d1-3e67-4482-a4fd-a39506efd625" name="Changes" comment="" />
+    <list default="true" id="d9bbe8d1-3e67-4482-a4fd-a39506efd625" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/afinal/room/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/icon_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/icon_phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/infomation_member.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/afinal/room/ViewPagerManagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/afinal/room/ViewPagerManagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/afinal/room/managerFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/channel01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/channel02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/channel03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/channel04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/channel05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/icon_bg_tv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/icon_lamp_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_ac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_ac_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_aic_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_air_btn_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_air_condition.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_airc_hidden.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_baby_care.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_baby_care_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_bath_dryer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_bath_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_bath_shower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_bath_wash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_bed_ac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_bed_lamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_bed_rem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_bed_tv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_co.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_cool_air.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_cool_air_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_cotton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_cotton_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_dry_air.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_dry_air_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_fan_air.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_fan_air_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lamp_do.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lamp_hong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lamp_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lamp_vang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lamp_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lamp_xanh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_light_select.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lighting_bath.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lighting_bed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lv_ac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lv_audio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lv_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_lv_tv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_mix_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_on_air.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_sensor_air_quality.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_sensor_humidity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_sensor_noise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_sensor_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_sensor_temperature.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_setting_air_condition.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_sport_wear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_sport_wear_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_start_wm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_start_wm_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_tv_hidden.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_tv_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_tv_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_washer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_wm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_wm_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_wm_hidden.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/icon_wm_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/kenh01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/kenh02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/kenh03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/kenh04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/kenh05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/light_living.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_manager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_manager.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_member.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_member.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,8 +156,14 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2VtMlnvcL3zvhHcKycjvgztAGkF" />
   <component name="ProjectViewState">
@@ -73,17 +176,23 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/PC/Desktop/Electronic-device-control-application-main/app/src/main/res"
+    "last_directory_selection": "C:/Users/PC/Desktop/test/do_an_tot_nghiep/Electronic-device-control-application-main/app/src/main/res/drawable",
+    "last_opened_file_path": "C:/Users/PC/Desktop/test/do_an_tot_nghiep/Electronic-device-control-application-main/app/src/main/res/drawable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Desktop\test\do_an_tot_nghiep\Electronic-device-control-application-main\app\src\main\res\drawable" />
+      <recent name="C:\Users\PC\Desktop\test\do_an_tot_nghiep\Electronic-device-control-application-main\app\src\main\res\layout" />
       <recent name="C:\Users\PC\Desktop\Electronic-device-control-application-main\app\src\main\res" />
       <recent name="C:\Users\PC\Desktop\Electronic-device-control-application-main\app\src\main\java\com\example\afinal" />
       <recent name="C:\Users\PC\Desktop\do_an_tot_nghiep-main\code_android_datn" />
-      <recent name="C:\Users\PC\Desktop\Electronic-device-control-application-main\app" />
+    </key>
+    <key name="android.template.-164086986">
+      <recent name="com.example.afinal.room" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.afinal.room" />
       <recent name="com.example.afinal.fragment_home" />
       <recent name="com.example.afinal" />
     </key>
