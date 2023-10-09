@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background">
+    <com.example.afinal.custom_textView.RobotoBlackTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="User Account Setting"
+        android:textColor="@color/white"
+        android:background="@drawable/dialog_background_cornertop"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+    <com.example.afinal.custom_textView.RobotoRegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Hãy thay đổi những gì bạn muốn"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_background_border"
+            android:gravity="center_vertical|start"
+            android:hint="tên người dùng"
+            android:padding="10dp"
+            android:text=""
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_background_border"
+            android:gravity="center_vertical|start"
+            android:hint="mật khẩu"
+            android:padding="10dp"
+            android:textSize="16dp" />
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dialog_background_border"
+                android:gravity="center_vertical|start"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:hint="email"/>
+
+        <EditText
+            android:id="@+id/ed_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_background_border"
+            android:gravity="center_vertical|start"
+            android:hint="số điện thoại"
+            android:padding="10dp"
+            android:textSize="16dp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_background"
+            android:text="Hủy thay đổi"
+            android:textColor="#EFF5F5"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_background"
+            android:text="Xác nhận thay đổi"
+            android:textColor="#EFF5F5"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

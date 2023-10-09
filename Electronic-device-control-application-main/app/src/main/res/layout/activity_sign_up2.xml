@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".login.SignUp2Activity">
+
+    <RelativeLayout
+        android:id="@+id/frmTop"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:background="@drawable/backg">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_arrow" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/custom_frame_number_activity_signup">
+
+            <com.example.afinal.custom_textView.RobotoMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="14dp"
+                android:text="2/3"
+                android:textColor="#EEE8E8"
+                android:textSize="30sp" />
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/homeLogo"
+                android:layout_width="330dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/logo_welcome" />
+
+            <com.example.afinal.custom_textView.RobotoMediumTextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeLogo"
+                android:layout_marginTop="40dp"
+                android:text="Giới tính"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+
+                />
+
+            <RadioGroup
+                android:id="@+id/rdGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvGender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/custom_radio_button"
+                    android:paddingLeft="5dp"
+                    android:text="Nam"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/custom_radio_button"
+                    android:paddingLeft="5dp"
+                    android:text="Nữ"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/rbOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/custom_radio_button"
+                    android:paddingLeft="5dp"
+                    android:text="Khác"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+            </RadioGroup>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/rdGroup"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" />
+
+            <com.example.afinal.custom_textView.RobotoMediumTextView
+                android:id="@+id/tvChooseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_marginTop="10dp"
+                android:text="Ngày sinh"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <DatePicker
+                android:id="@+id/chooseDate"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/tvChooseDate"
+                android:calendarTextColor="@color/white"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:paddingBottom="20dp"
+                android:spinnersShown="true" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_next" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+
+        <com.example.afinal.custom_textView.RobotoMediumTextView
+            android:id="@+id/txtSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Bạn có muốn tạo tài khoản?"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/txtSignup"
+            android:text="Đăng ký "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
